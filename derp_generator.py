@@ -46,9 +46,9 @@ def generate_emails(domain):
     emails = [username + '@' + domain for username in common_usernames]
 
     # Ask if users have been added to additional_users.txt
-    add_additional = input("Have users been added to additional_users.txt? (y/n): ").lower()
+    add_additional = input("Have users been added to additional_usernames.txt? (y/n): ").lower()
     if add_additional == 'y':
-        with open('additional_users.txt', 'r') as file:
+        with open('additional_usernames.txt', 'r') as file:
             additional_usernames.extend(file.read().splitlines())
         emails.extend(username.strip() + '@' + domain for username in additional_usernames)
     elif add_additional != 'n':
