@@ -1,4 +1,31 @@
 import os
+from colorama import Fore, Style, init
+
+def banner():
+    init(autoreset=True)
+    print(Fore.BLUE + Style.BRIGHT + """
+                ⣀⣤⣴⣶⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀      ⣠⡤⣤⣄⣾⣿⣿⣿⣿⣿⣿⣷⣠⣀⣄⡀⠀⠀⠀⠀ 
+⠀⠀       ⠙⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣬⡿⠀⠀⠀⠀ 
+⠀      ⠀    ⣼⠟⢿⣿⣿⣿⣿⣿⣿⡿⠘⣷⣄⠀⠀⠀⠀⠀ 
+     ⣰⠛⠛⣿⢠⣿⠋⠀⠀⢹⠻⣿⣿⡿⢻⠁⠀⠈⢿⣦⠀⠀⠀⠀ 
+     ⢈⣵⡾⠋⣿⣯⠀⠀⢀⣼⣷⣿⣿⣶⣷⡀⠀⠀⢸⣿⣀⣀⠀⠀ 
+     ⢾⣿⣀⠀⠘⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⠿⣿⡁⠀⠀⠀ 
+      ⠈⠙⠛⠿⠿⠿⢿⣿⡿⣿⣿⡿⢿⣿⣿⣿⣿⣷⣄⠀⠘⢷⣆⠀⠀ 
+         ⠀⠀⢠⣿⠏⠀⣿⡏⠀⣼⣿⠛⢿⣿⣿⣆⠀⠀⣿⡇⡀ 
+       ⠀⠀  ⣾⡟⠀⠀⣿⣇⠀⢿⣿⡀⠈⣿⡌⠻⠷⠾⠿⣻⠁ 
+⠀      ⣠⣶⠟⠫⣤⠀⠀⢸⣿⠀⣸⣿⢇⡤⢼⣧⠀⠀⠀⢀⣿⠀  
+     ⣾⡏⠀⡀⣠⡟⠀⠀⢀⣿⣾⠟⠁⣿⡄⠀⠻⣷⣤⣤⡾⠋⠀  
+    ⠀⠙⠷⠾⠁⠻⣧⣀⣤⣾⣿⠋⠀⠀⢸⣧⠀⠀⠀⠉⠁⠀⠀⠀  
+⠀⠀⠀        ⠈⠉⠉⠹⣿⣄⠀⠀⣸⡿⠀⠀⠀⠀⠀⠀⠀   
+⠀⠀⠀⠀     ⠀⠀ ⠀ ⠀⠙⠛⠿⠟⠛⠁⠀               
+""")
+    print(Fore.MAGENTA + Style.BRIGHT + "                         Derp Generator                                  ")
+    print(Fore.LIGHTMAGENTA_EX + Style.BRIGHT + "                           By d1r7b46                                    \n" + Style.RESET_ALL)
+    print("-" * 45)
+
+if __name__ == "__main__":
+    banner()
 
 def generate_emails(domain):
     # Check if domain contains a dot
